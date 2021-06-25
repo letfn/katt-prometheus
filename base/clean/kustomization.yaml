@@ -2,20 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - vendor/kube-prometheus/manifests/setup/0namespace-namespace.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0alertmanagerConfigCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0alertmanagerCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0podmonitorCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0probeCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0prometheusCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0prometheusruleCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0servicemonitorCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-0thanosrulerCustomResourceDefinition.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-clusterRole.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-clusterRoleBinding.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-deployment.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-service.yaml
-  - vendor/kube-prometheus/manifests/setup/prometheus-operator-serviceAccount.yaml
   - vendor/kube-prometheus/manifests/alertmanager-alertmanager.yaml
   - vendor/kube-prometheus/manifests/alertmanager-podDisruptionBudget.yaml
   - vendor/kube-prometheus/manifests/alertmanager-prometheusRule.yaml

@@ -2,3 +2,7 @@
 	path = base/clean/vendor/kube-prometheus
 	url = https://github.com/prometheus-operator/kube-prometheus
 	branch = v0.8.0
+[submodule "base/setup/vendor/kube-prometheus"]
+	path = base/setup/vendor/kube-prometheus
+	url = https://github.com/prometheus-operator/kube-prometheus
+	branch = v0.8.0
