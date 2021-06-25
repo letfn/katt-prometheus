@@ -1,0 +1,4 @@
+[submodule "base/vendor/kube-prometheus"]
+	path = base/clean/vendor/kube-prometheus
+	url = https://github.com/prometheus-operator/kube-prometheus
+	branch = v0.8.0
