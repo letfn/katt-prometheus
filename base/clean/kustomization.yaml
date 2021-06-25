@@ -70,9 +70,3 @@ resources:
   - vendor/kube-prometheus/manifests/prometheus-service.yaml
   - vendor/kube-prometheus/manifests/prometheus-serviceAccount.yaml
   - vendor/kube-prometheus/manifests/prometheus-serviceMonitor.yaml
-
-patches:
-- path: patch-no-host-mounts.yaml
-  target:
-    kind: DaemonSet
-    name: node-exporter
