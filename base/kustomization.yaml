@@ -9,3 +9,15 @@ patches:
   target:
     kind: DaemonSet
     name: node-exporter
+- path: patch-one-replica.yaml
+  target:
+    kind: Deployment
+    name: prometheus-adapter
+- path: patch-one-replica.yaml
+  target:
+    kind: Alertmanager
+    name: main
+- path: patch-one-replica.yaml
+  target:
+    kind: Prometheus
+    name: k8s
