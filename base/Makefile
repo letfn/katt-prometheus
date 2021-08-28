@@ -1,3 +1,5 @@
+build: clean prometheus.yaml
+
 prometheus.yaml: setup/prometheus.yaml clean/prometheus.yaml
 	kustomize build > $@
 
@@ -6,3 +8,7 @@ clean/prometheus.yaml:
 
 setup/prometheus.yaml:
 	kustomize build setup > $@
+
+.PHONY: clean
+clean:
+	rm -f clean/prometheus.yaml
