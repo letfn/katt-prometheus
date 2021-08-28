@@ -11,4 +11,5 @@ setup/prometheus.yaml:
 
 .PHONY: clean
 clean:
+	rm -f setup/prometheus.yaml
 	rm -f clean/prometheus.yaml
